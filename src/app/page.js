@@ -1,66 +1,55 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Rhythms from "@/components/Rhythms";
+import ParallaxBanner from "@/components/ParallaxBanner";
+import Experience from "@/components/Experience";
+import Gallery from "@/components/Gallery";
+import GettingThere from "@/components/GettingThere";
+import BookingForm from "@/components/BookingForm";
+import Footer from "@/components/Footer";
+import ScrollVectorBackground from "@/components/ScrollVectorBackground";
+import AmbientParticles from "@/components/AmbientParticles";
+import ZenMode from "@/components/ZenMode";
+import VideoShowcase from "@/components/VideoShowcase";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <ScrollVectorBackground />
+      <AmbientParticles />
+      <Navbar />
+      <main>
+        <Hero />
+
+        <About />
+
+        <Rhythms />
+
+        <ParallaxBanner
+          image="/images/sixthcampimage.jpg"
+          alt="Saryu valley panorama from Shama Village"
+          title="Where Rivers Begin"
+          subtitle="Perched above the Saryu valley, every sunrise is a private showing"
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        <Experience />
+
+        <VideoShowcase />
+
+        <Gallery />
+
+        <GettingThere />
+
+        <ParallaxBanner
+          image="/images/fourteenimage.jpg"
+          alt="Golden hour on snow peaks"
+        />
+
+        <BookingForm />
       </main>
-    </div>
+      <ZenMode />
+      <Footer />
+    </>
   );
 }
