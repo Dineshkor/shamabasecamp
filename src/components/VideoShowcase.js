@@ -6,7 +6,15 @@ export default function VideoShowcase() {
   const sectionRef = useRef(null);
   const vid1Ref = useRef(null);
   const vid2Ref = useRef(null);
+  const reelWrapRef = useRef(null);
   const [isVid2Playing, setIsVid2Playing] = useState(false);
+  const [isVid2Muted, setIsVid2Muted] = useState(false);
+  const isMutedRef = useRef(false);
+
+  // Sync ref with state
+  useEffect(() => {
+    isMutedRef.current = isVid2Muted;
+  }, [isVid2Muted]);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -57,25 +65,35 @@ export default function VideoShowcase() {
 
   // Intersection-based autoplay for vid2 (portrait reel)
   useEffect(() => {
+    const wrap = reelWrapRef.current;
     const vid = vid2Ref.current;
-    if (!vid) return;
+    if (!wrap || !vid) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            vid.play().catch(() => {});
-            setIsVid2Playing(true);
+            // Attempt unmuted play first
+            vid.muted = isMutedRef.current;
+            vid.play()
+              .catch((err) => {
+                // If blocked and we were unmuted, fall back to muted autoplay
+                if (!isMutedRef.current) {
+                  console.log("Unmuted play blocked, falling back to muted autoplay");
+                  vid.muted = true;
+                  setIsVid2Muted(true);
+                  vid.play().catch((e) => console.error("Muted play failed:", e));
+                }
+              });
           } else {
             vid.pause();
-            setIsVid2Playing(false);
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.3 }
     );
 
-    observer.observe(vid);
+    observer.observe(wrap);
     return () => observer.disconnect();
   }, []);
 
@@ -83,13 +101,24 @@ export default function VideoShowcase() {
     const vid = vid2Ref.current;
     if (!vid) return;
     if (vid.paused) {
+      // Unmute when user explicitly clicks to play
+      vid.muted = false;
+      setIsVid2Muted(false);
       vid.play().catch(() => {});
-      setIsVid2Playing(true);
     } else {
       vid.pause();
-      setIsVid2Playing(false);
     }
   };
+
+  const toggleMute = (e) => {
+    e.stopPropagation();
+    const vid = vid2Ref.current;
+    if (!vid) return;
+    vid.muted = !vid.muted;
+    setIsVid2Muted(vid.muted);
+  };
+
+
 
   return (
     <section id="video-showcase" ref={sectionRef}>
@@ -152,7 +181,7 @@ export default function VideoShowcase() {
             </div>
 
             {/* Right: Portrait Video in Phone Frame */}
-            <div className="vshow__reel-frame-wrap reveal reveal-delay-2">
+            <div ref={reelWrapRef} className="vshow__reel-frame-wrap reveal reveal-delay-2">
               <div className="vshow__reel-frame" onClick={toggleVid2}>
                 <div className="vshow__reel-notch" />
                 <video
@@ -162,12 +191,29 @@ export default function VideoShowcase() {
                   loop
                   playsInline
                   preload="metadata"
+                  muted={isVid2Muted}
+                  onPlay={() => setIsVid2Playing(true)}
+                  onPause={() => setIsVid2Playing(false)}
                 />
                 <div className={`vshow__reel-play-btn ${isVid2Playing ? 'vshow__reel-play-btn--hidden' : ''}`}>
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <circle cx="24" cy="24" r="23" stroke="white" strokeWidth="2" opacity="0.6"/>
                     <polygon points="19,14 36,24 19,34" fill="white" opacity="0.9"/>
                   </svg>
+                </div>
+                <div className="vshow__reel-mute-btn" onClick={toggleMute}>
+                  {isVid2Muted ? (
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="1" y1="1" x2="23" y2="23"></line>
+                      <path d="M9 9v6a3 3 0 0 0 3 3h1.586l4.707 4.707A1 1 0 0 0 20 22V4a1 1 0 0 0-1.707-.707L13.586 8H12a3 3 0 0 0-3 3z"></path>
+                    </svg>
+                  ) : (
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                    </svg>
+                  )}
                 </div>
                 {/* Ambient glow behind the frame */}
                 <div className="vshow__reel-glow" />
