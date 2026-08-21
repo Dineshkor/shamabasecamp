@@ -58,7 +58,7 @@ export default function Navbar() {
           />
         </div>
         <div>
-          <div className="navbar__logo-text" style={{ lineHeight: '1.1' }}>Shama Brews and Base</div>
+          <div className="navbar__logo-text" style={{ lineHeight: '1.1' }}>Shama Brews <span className="brand-amp navbar__amp">&amp;</span> Base</div>
           <div className="navbar__logo-sub" style={{ fontSize: '0.6rem', marginTop: '2px' }}>Kumaon Himalayas</div>
         </div>
       </a>

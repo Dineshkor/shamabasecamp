@@ -33,7 +33,7 @@ export default function Footer() {
                   style={{ objectFit: 'contain' }}
                 />
               </div>
-              <h3 style={{ margin: 0, color: 'var(--snow)' }}>Shama Brews and Base</h3>
+              <h3 style={{ margin: 0, color: 'var(--snow)' }}>Shama Brews <span className="brand-amp footer__amp">&amp;</span> Base</h3>
             </div>
             <p>
               A quiet corner of the Kumaon Himalayas, where the mountains teach
@@ -119,7 +119,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="footer__bottom">
           <p className="footer__copy">
-            © 2025 Shama Brews and Base. All rights reserved.
+            © 2025 Shama Brews & Base. All rights reserved.
           </p>
           <span className="footer__eco">🌿 Eco-Friendly &amp; Off-Grid</span>
         </div>

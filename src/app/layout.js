@@ -32,10 +32,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Shama Brews and Base — A Himalayan Village Retreat & Mountain Brews | Kumaon, Uttarakhand",
+  title: "Shama Brews & Base — A Himalayan Village Retreat & Mountain Brews | Kumaon, Uttarakhand",
   description:
-    "Escape to Shama Brews and Base, an eco-friendly nature retreat nestled at 2,100m in the Kumaon Himalayas. Experience artisanal mountain brews, stone cottages, Himalayan trails, village cuisine, and breathtaking mountain views in Shama Village, Bageshwar, Uttarakhand.",
+    "Escape to Shama Brews & Base, an eco-friendly nature retreat nestled at 2,100m in the Kumaon Himalayas. Experience artisanal mountain brews, stone cottages, Himalayan trails, village cuisine, and breathtaking mountain views in Shama Village, Bageshwar, Uttarakhand.",
   keywords: [
+    "Shama Brews & Base",
     "Shama Brews and Base",
     "Shama Basecamp",
     "Himalayan brews",
@@ -50,12 +51,12 @@ export const metadata = {
     "off-grid stay",
   ],
   openGraph: {
-    title: "Shama Brews and Base — A Himalayan Village Retreat & Mountain Brews",
+    title: "Shama Brews & Base — A Himalayan Village Retreat & Mountain Brews",
     description:
       "An eco-friendly nature retreat and mountain brews at 2,100m in the Kumaon Himalayas. Stone cottages, mountain views, village life.",
     type: "website",
     locale: "en_IN",
-    siteName: "Shama Brews and Base",
+    siteName: "Shama Brews & Base",
   },
 };
 

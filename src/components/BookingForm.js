@@ -227,7 +227,7 @@ export default function BookingForm() {
     const nights = getNights();
     const guests = getGuestsNum();
 
-    const messageText = `*Booking Enquiry & Payment - Shama Brews and Base*
+    const messageText = `*Booking Enquiry & Payment - Shama Brews & Base*
 
 *Name:* ${formData.name}
 *Email:* ${formData.email}

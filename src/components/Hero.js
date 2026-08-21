@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="hero__bg hero__bg-ken-burns">
         <Image
           src="/images/seventhcampimage.jpg"
-          alt="Stone cottage at Shama Brews and Base surrounded by autumn flowers in the Kumaon Himalayas"
+          alt="Stone cottage at Shama Brews & Base surrounded by autumn flowers in the Kumaon Himalayas"
           fill
           priority
           quality={90}
@@ -34,7 +34,7 @@ export default function Hero() {
           className="hero__title hero__fade-in"
           style={{ animationDelay: '0.4s' }}
         >
-          Shama Brews and Base
+          Shama Brews <span className="hero__amp">&amp;</span> Base
         </h1>
         <p
           className="hero__tagline hero__fade-in"

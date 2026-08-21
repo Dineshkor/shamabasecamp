@@ -425,7 +425,7 @@ export default function ZenMode() {
             >
               <Image
                 src={src}
-                alt="Scenic Himalayan View at Shama Brews and Base"
+                alt="Scenic Himalayan View at Shama Brews & Base"
                 fill
                 priority={index === 0}
                 style={{ objectFit: 'cover' }}
