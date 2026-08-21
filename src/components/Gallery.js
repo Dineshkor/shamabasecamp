@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 
 const galleryImages = [
-  { src: '/images/seventhcampimage.jpg', alt: 'Stone cottage in autumn', caption: 'The Basecamp Cottage', className: 'gallery__item--tall' },
+  { src: '/images/seventhcampimage.jpg', alt: 'Stone cottage in autumn', caption: 'The Base Cottage', className: 'gallery__item--tall' },
   { src: '/images/sixthcampimage.jpg', alt: 'River valley panorama', caption: 'Saryu Valley Views' },
   { src: '/images/secondcampimage.jpg', alt: 'Alpenglow on peaks', caption: 'Alpenglow at Dawn', className: 'gallery__item--wide' },
   { src: '/images/eightcampimage.jpg', alt: 'Cottage with marigolds', caption: 'Marigold Season' },

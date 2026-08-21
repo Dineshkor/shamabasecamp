@@ -161,7 +161,7 @@ export default function VideoShowcase() {
               <p>
                 Watch the mist roll through the Saryu valley at dawn. See the light 
                 paint the Trishul and Nanda Devi peaks in gold. This is not a curated 
-                experience — it is daily life at Shama Basecamp.
+                experience — it is daily life at Shama Brews and Base.
               </p>
               <p>
                 Every visit writes its own story. The trails change with the seasons, 

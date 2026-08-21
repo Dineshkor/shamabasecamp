@@ -39,7 +39,7 @@ export default function About() {
             <h2>Rooted in the Mountains</h2>
             <p>
               Nestled at 2,100 metres in Shama Village, Bageshwar district,
-              Shama Basecamp is a quiet corner of the Kumaon Himalayas where the
+              Shama Brews and Base is a quiet corner of the Kumaon Himalayas where the
               rhythm of life follows the sun and seasons. Our stone-and-mud
               cottages, built in the traditional Kumaoni style, sit on a gentle
               ridge overlooking terraced fields and snow-capped peaks.
@@ -73,7 +73,7 @@ export default function About() {
             <div className="about__collage-primary">
               <Image
                 src="/images/eightcampimage.jpg"
-                alt="Stone-and-mud cottage with marigolds at Shama Basecamp"
+                alt="Stone-and-mud cottage with marigolds at Shama Brews and Base"
                 fill
                 sizes="(max-width: 992px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -85,7 +85,7 @@ export default function About() {
             <div className="about__collage-secondary">
               <Image
                 src="/images/thirteenimage.jpg"
-                alt="Rustic wooden cabin interior at Shama Basecamp"
+                alt="Rustic wooden cabin interior at Shama Brews and Base"
                 fill
                 sizes="(max-width: 992px) 50vw, 25vw"
                 style={{ objectFit: 'cover' }}

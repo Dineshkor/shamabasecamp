@@ -23,17 +23,17 @@ export default function Footer() {
         <div className="footer__grid">
           {/* Brand Column */}
           <div className="footer__brand">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: 'var(--space-sm)' }}>
-              <div style={{ position: 'relative', width: '44px', height: '44px', overflow: 'hidden', borderRadius: '50%', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: 'var(--space-sm)' }}>
+              <div style={{ position: 'relative', width: '56px', height: '56px', overflow: 'hidden', borderRadius: '50%', flexShrink: 0, border: '1px solid rgba(255, 255, 255, 0.15)', boxShadow: '0 4px 15px rgba(0,0,0,0.25)' }}>
                 <Image
-                  src="/images/logo.png"
-                  alt="Shama Basecamp Logo"
+                  src="/images/shama-brews-logo.png"
+                  alt="Shama Brews & Base Logo"
                   fill
-                  sizes="44px"
-                  style={{ objectFit: 'cover' }}
+                  sizes="56px"
+                  style={{ objectFit: 'contain' }}
                 />
               </div>
-              <h3 style={{ margin: 0, color: 'var(--snow)' }}>Shama Basecamp</h3>
+              <h3 style={{ margin: 0, color: 'var(--snow)' }}>Shama Brews and Base</h3>
             </div>
             <p>
               A quiet corner of the Kumaon Himalayas, where the mountains teach
@@ -119,7 +119,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="footer__bottom">
           <p className="footer__copy">
-            © 2025 Shama Basecamp. All rights reserved.
+            © 2025 Shama Brews and Base. All rights reserved.
           </p>
           <span className="footer__eco">🌿 Eco-Friendly &amp; Off-Grid</span>
         </div>

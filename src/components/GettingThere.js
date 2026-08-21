@@ -23,9 +23,9 @@ const routeSteps = [
   },
   {
     icon: '🚕',
-    title: 'Taxi to Shama Basecamp',
+    title: 'Taxi to Shama Brews and Base',
     description:
-      'A 2-hour taxi ride from Bageshwar directly to the basecamp, climbing through scenic ridges to 2,100m',
+      'A 2-hour taxi ride from Bageshwar directly to Shama Brews and Base, climbing through scenic ridges to 2,100m',
   },
 ];
 

@@ -48,17 +48,17 @@ export default function Navbar() {
     <nav className={navbarClass}>
       {/* Logo */}
       <a href="#" className="navbar__logo" onClick={handleLinkClick} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        <div style={{ position: 'relative', width: '40px', height: '40px', overflow: 'hidden', borderRadius: '50%' }}>
+        <div style={{ position: 'relative', width: '46px', height: '46px', overflow: 'hidden', borderRadius: '50%', flexShrink: 0, boxShadow: '0 2px 10px rgba(0,0,0,0.15)' }}>
           <Image
-            src="/images/logo.png"
-            alt="Shama Basecamp Logo"
+            src="/images/shama-brews-logo.png"
+            alt="Shama Brews & Base Logo"
             fill
-            sizes="40px"
-            style={{ objectFit: 'cover' }}
+            sizes="46px"
+            style={{ objectFit: 'contain' }}
           />
         </div>
         <div>
-          <div className="navbar__logo-text" style={{ lineHeight: '1.1' }}>Shama Basecamp</div>
+          <div className="navbar__logo-text" style={{ lineHeight: '1.1' }}>Shama Brews and Base</div>
           <div className="navbar__logo-sub" style={{ fontSize: '0.6rem', marginTop: '2px' }}>Kumaon Himalayas</div>
         </div>
       </a>

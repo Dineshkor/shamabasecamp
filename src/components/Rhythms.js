@@ -23,8 +23,8 @@ const DAY_STAGES = [
   {
     time: '04:00 PM',
     label: 'Afternoon Solitude',
-    title: 'Hearthfire & Chai',
-    description: 'As the shadows lengthen across the Saryu Valley, return to the basecamp for hot ginger chai and Kumaoni flatbreads. It is the perfect time for writing, reading, or simply listening to the silence.',
+    title: 'Hearthfire & Mountain Brews',
+    description: 'As the shadows lengthen across the Saryu Valley, return for freshly brewed mountain coffee, hot ginger chai, and Kumaoni flatbreads. It is the perfect time for writing, reading, or simply listening to the silence.',
     image: '/images/twelveimage.jpg',
     alt: 'Golden light on peaks during sunset'
   },
