@@ -59,7 +59,7 @@ export default function Footer() {
                 📘
               </a>
               <a
-                href="mailto:shamabasecamp@gmail.com"
+                href="mailto:khileshkoranga657@gmail.com"
                 className="footer__social-link"
                 aria-label="Email"
               >
@@ -91,8 +91,8 @@ export default function Footer() {
                 <span>Uttarakhand 263641, India</span>
               </li>
               <li>
-                <a href="mailto:shamabasecamp@gmail.com">
-                  shamabasecamp@gmail.com
+                <a href="mailto:khileshkoranga657@gmail.com">
+                  khileshkoranga657@gmail.com
                 </a>
               </li>
               <li>

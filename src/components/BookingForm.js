@@ -279,8 +279,8 @@ ${formData.message || 'None'}`;
             <div style={{ marginTop: 'var(--space-lg)' }}>
               <div className="booking__contact-item">
                 <span className="booking__contact-icon">📧</span>
-                <a href="mailto:shamabasecamp@gmail.com" className="booking__contact-link" style={{ color: 'inherit', textDecoration: 'none' }}>
-                  shamabasecamp@gmail.com
+                <a href="mailto:khileshkoranga657@gmail.com" className="booking__contact-link" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  khileshkoranga657@gmail.com
                 </a>
               </div>
               <div className="booking__contact-item">
