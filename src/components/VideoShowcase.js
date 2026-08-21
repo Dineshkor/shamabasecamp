@@ -140,7 +140,7 @@ export default function VideoShowcase() {
             Feel the Silence,<br />Hear the Mountains
           </h2>
           <p className="vshow__cinematic-sub">
-            A glimpse into the rhythm of life at 2,500 metres — 
+            A glimpse into the rhythm of life at 2,100 metres — 
             where mornings begin with birdsong and evenings end with stars.
           </p>
         </div>

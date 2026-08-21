@@ -38,7 +38,7 @@ export default function About() {
           <div className="about__text reveal">
             <h2>Rooted in the Mountains</h2>
             <p>
-              Nestled at 2,500 metres in Shama Village, Bageshwar district,
+              Nestled at 2,100 metres in Shama Village, Bageshwar district,
               Shama Basecamp is a quiet corner of the Kumaon Himalayas where the
               rhythm of life follows the sun and seasons. Our stone-and-mud
               cottages, built in the traditional Kumaoni style, sit on a gentle
@@ -54,7 +54,7 @@ export default function About() {
 
             <div className="about__stats-circles">
               <div className="about__stat-circle">
-                <div className="about__stat-val">2,500m</div>
+                <div className="about__stat-val">2,100m</div>
                 <div className="about__stat-lbl">Altitude</div>
               </div>
               <div className="about__stat-circle">

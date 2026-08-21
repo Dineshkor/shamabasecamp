@@ -31,7 +31,7 @@ const activities = [
     icon: '✨',
     title: 'Stargazing',
     description:
-      'At 2,500m with zero light pollution, the night sky is a cathedral of stars. See the Milky Way stretch from horizon to horizon on clear nights.',
+      'At 2,100m with zero light pollution, the night sky is a cathedral of stars. See the Milky Way stretch from horizon to horizon on clear nights.',
   },
   {
     icon: '🏘️',

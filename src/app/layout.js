@@ -19,7 +19,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata = {
   title: "Shama Basecamp — A Himalayan Village Retreat | Kumaon, Uttarakhand",
   description:
-    "Escape to Shama Basecamp, an eco-friendly nature retreat nestled at 2,500m in the Kumaon Himalayas. Experience stone cottages, Himalayan trails, village cuisine, and breathtaking mountain views in Shama Village, Bageshwar, Uttarakhand.",
+    "Escape to Shama Basecamp, an eco-friendly nature retreat nestled at 2,100m in the Kumaon Himalayas. Experience stone cottages, Himalayan trails, village cuisine, and breathtaking mountain views in Shama Village, Bageshwar, Uttarakhand.",
   keywords: [
     "Shama Basecamp",
     "Kumaon Himalayas",
@@ -35,7 +35,7 @@ export const metadata = {
   openGraph: {
     title: "Shama Basecamp — A Himalayan Village Retreat",
     description:
-      "An eco-friendly nature retreat at 2,500m in the Kumaon Himalayas. Stone cottages, mountain views, village life.",
+      "An eco-friendly nature retreat at 2,100m in the Kumaon Himalayas. Stone cottages, mountain views, village life.",
     type: "website",
     locale: "en_IN",
     siteName: "Shama Basecamp",

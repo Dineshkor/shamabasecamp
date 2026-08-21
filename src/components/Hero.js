@@ -28,7 +28,7 @@ export default function Hero() {
           className="hero__subtitle hero__fade-in"
           style={{ animationDelay: '0s' }}
         >
-          Kumaon Himalayas · 2,500m · Off-Grid
+          Kumaon Himalayas · 2,100m · Off-Grid
         </p>
         <h1
           className="hero__title hero__fade-in"

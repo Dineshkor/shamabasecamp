@@ -25,7 +25,7 @@ const routeSteps = [
     icon: '🚕',
     title: 'Taxi to Shama Basecamp',
     description:
-      'A 2-hour taxi ride from Bageshwar directly to the basecamp, climbing through scenic ridges to 2,500m',
+      'A 2-hour taxi ride from Bageshwar directly to the basecamp, climbing through scenic ridges to 2,100m',
   },
 ];
 
@@ -33,7 +33,7 @@ const infoCards = [
   { icon: '🏔️', label: 'Nearest Town', value: 'Bageshwar' },
   { icon: '🚉', label: 'Nearest Station', value: 'Kathgodam' },
   { icon: '✈️', label: 'Nearest Airport', value: 'Pantnagar' },
-  { icon: '📍', label: 'Altitude', value: '~2,500m' },
+  { icon: '📍', label: 'Altitude', value: '~2,100m' },
 ];
 
 const MAPS_EMBED_URL =
